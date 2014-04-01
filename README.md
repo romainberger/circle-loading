@@ -18,7 +18,7 @@ With bower:
 
     var span = $('span')
 
-    // Initilisation
+    // Initialisation
     span.circleLoading()
 
     // Start the animation
