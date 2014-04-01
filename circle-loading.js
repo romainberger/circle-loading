@@ -94,7 +94,7 @@
       if (this.i <= 2) {
         this._draw()
       }
-      else {
+      else if (!this.options.stopOnComplete) {
         this._erase()
       }
       this.ctx.lineWidth   = this.options.lineWidth
@@ -125,7 +125,7 @@
      * Draw the circle
      */
     _draw: function() {
-      if (this.i > Math.PI * 1.5) {
+      if (this._round(this.i) > Math.PI * 1.5) {
         return
       }
       this.ctx.arc(this.size / 2, this.size / 2, (this.width / 2) + 4, -1.5, Math.PI * this.i - 1.5, false)
@@ -136,7 +136,7 @@
      */
     _erase: function() {
       var i = this.i - 2
-      if (this._round(i) > 1.999) {
+      if (this._round(i) > 2) {
         return
       }
       this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height)
