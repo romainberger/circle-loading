@@ -1,0 +1,8 @@
+{
+  "name": "circle-loading",
+  "version": "0.0.1",
+  "main": "circle-loading.js",
+  "dependencies": {
+    "jquery": "~2.0.3"
+  }
+}

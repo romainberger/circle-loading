@@ -1,0 +1,19 @@
+{
+  "name": "circle-loading",
+  "version": "0.0.1",
+  "main": "circle-loading.js",
+  "dependencies": {
+    "jquery": "~2.0.3"
+  },
+  "homepage": "https://github.com/romainberger/circle-loading",
+  "_release": "0.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.0.1",
+    "commit": "dcde1fba6e68fa3cd1634f935abeb60c69e5a27c"
+  },
+  "_source": "git://github.com/romainberger/circle-loading.git",
+  "_target": "~0.0.1",
+  "_originalSource": "circle-loading",
+  "_direct": true
+}
