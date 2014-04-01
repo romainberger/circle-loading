@@ -40,9 +40,26 @@ You can set some options while initializing the plugin:
       , speed:       30
     })
 
+Complete list of options available:
+
+* ***speed***: Speed of the animation - default to 10ms
+* ***lineWidth***: Width of the line - default to 1
+* ***strokeStyle***: Color of the line - default to `#000`
+* ***fade***: Use a fade in / fade out - default to `true`
+* ***speedFadeIn***: Speed of the fade at the beginning in milliseconds - default to 300
+* ***speedFadeOut***: Speed of the fade at the end in milliseconds - default to 300
+* ***stopOnComplete***: Determine if the animation is supposed to be looped or stops when the circle is complete - default to false (loop)
+
+
+### Methods
+
 You can also update some options after the initializing - including while the animation is running
 
+    // Change the color of the line
     span.circleLoading('strokeStyle', '#0f0')
+
+    // Change the speed of the animation
+    span.circleLoading('speed', 10)
 
 ## Compatibility
 
