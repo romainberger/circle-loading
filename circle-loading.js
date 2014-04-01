@@ -101,7 +101,11 @@
       this.ctx.strokeStyle = this.options.strokeStyle
       this.ctx.stroke()
 
-      if (this.i >= 3.999) {
+      if (this._round(this.i) === 2 && this.options.stopOnComplete) {
+        this.stop()
+      }
+
+      if (this._round(this.i) >= 4) {
         this.i = 0
       }
       else {
@@ -132,7 +136,7 @@
      */
     _erase: function() {
       var i = this.i - 2
-      if (i > 1.999) {
+      if (this._round(i) > 1.999) {
         return
       }
       this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height)
@@ -172,6 +176,13 @@
      */
     strokeStyle: function(style) {
       this.options.strokeStyle = style
+    },
+
+    /**
+     * #loljs
+     */
+    _round: function(i) {
+      return Math.floor(i * 100) / 100
     }
   }
 
@@ -211,6 +222,7 @@
     , fade: true
     , speedFadeIn: 300
     , speedFadeOut: 300
+    , stopOnComplete: false
   }
 
 }(window.jQuery);
