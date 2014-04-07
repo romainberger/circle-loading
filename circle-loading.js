@@ -53,10 +53,11 @@
       this.canvas  = canvas[0]
       this.$canvas = $(this.canvas)
 
+      this.canvas.width  = this.size
+      this.canvas.height = this.size
+
       this.$canvas.css({
           position: 'absolute'
-        // , width: this.size
-        // , height: this.size
         , top: '-'+this.position+'px'
         , left: '-'+this.position+'px'
       })
