@@ -2,8 +2,6 @@
 
 Animation to draw a circle around an element (jQuery plugin).
 
-**Warning** Still in development so there's probably a crapload of bugs (including the size)
-
 [Demo](http://romainberger.github.io/circle-loading)
 
 ## Installation
