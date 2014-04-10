@@ -34,7 +34,7 @@
     this.canvas
     this.$canvas
     this.ctx
-    this.size = this.width + 8
+    this.size = this.width + 10
     this.position = (this.size - this.width) / 2
 
     this.running
